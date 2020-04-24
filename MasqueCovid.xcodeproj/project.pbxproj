@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		47A041552452F4C3001CEF68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A041532452F4C3001CEF68 /* Main.storyboard */; };
 		47A041572452F4C5001CEF68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47A041562452F4C5001CEF68 /* Assets.xcassets */; };
 		47A0415A2452F4C5001CEF68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47A041582452F4C5001CEF68 /* LaunchScreen.storyboard */; };
+		47A04162245306BC001CEF68 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A04161245306BC001CEF68 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		47A041562452F4C5001CEF68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47A041592452F4C5001CEF68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47A0415B2452F4C5001CEF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47A04161245306BC001CEF68 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		D066D7A68246BC1588575569 /* Pods-MasqueCovid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasqueCovid.release.xcconfig"; path = "Target Support Files/Pods-MasqueCovid/Pods-MasqueCovid.release.xcconfig"; sourceTree = "<group>"; };
 		D632707959CB9812AE41077D /* Pods_MasqueCovid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasqueCovid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 				47A0414B2452F4C3001CEF68 /* AppDelegate.swift */,
 				47A0414D2452F4C3001CEF68 /* SceneDelegate.swift */,
 				47A0414F2452F4C3001CEF68 /* FirstViewController.swift */,
+				47A04161245306BC001CEF68 /* Store.swift */,
 				47A041512452F4C3001CEF68 /* SecondViewController.swift */,
 				47A041532452F4C3001CEF68 /* Main.storyboard */,
 				47A041562452F4C5001CEF68 /* Assets.xcassets */,
@@ -91,7 +94,6 @@
 				1C9DE6905BCCDD12279AD6A2 /* Pods-MasqueCovid.debug.xcconfig */,
 				D066D7A68246BC1588575569 /* Pods-MasqueCovid.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A04162245306BC001CEF68 /* Store.swift in Sources */,
 				47A041522452F4C3001CEF68 /* SecondViewController.swift in Sources */,
 				47A041502452F4C3001CEF68 /* FirstViewController.swift in Sources */,
 				47A0414C2452F4C3001CEF68 /* AppDelegate.swift in Sources */,

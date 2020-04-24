@@ -17,6 +17,7 @@ class FirstViewController: UIViewController {
         scrape()
     }
 
+    var stores: [Store] = []
 
     // Grabs the HTML from https://masques-barrieres.afnor.org/Home/FabricantsParDepartement for parsing.
     func scrape() -> Void {
@@ -33,7 +34,10 @@ class FirstViewController: UIViewController {
     func parseHTML(html: String) -> Void {
         do {
            let doc: Document = try SwiftSoup.parse(html)
-            print(try doc.text())
+            guard let items = try? doc.body()?.select("[class=col-sm-8]").array() else { return }
+            for item in items {
+                self.stores.append(Store(doc: item))
+            }
         } catch Exception.Error(let type, let message) {
             print(message)
         } catch {
